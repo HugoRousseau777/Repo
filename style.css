@@ -1,304 +1,715 @@
-@media (max-width: 400px)  {
-    
-    body {
-        margin: 0;
-        padding: 0;
-    }
+body {
+    margin: 0;
+    padding: 0;
+  }
 
-    #animationAccueil {
-        border: 3px solid black;
-        animation: animationAccueilVide 3s ease-in 0s 1 normal none;
-    }
+  img {
+    object-fit: contain;
+  }
 
+  #animationAccueil {
+    border: 3px solid black;
+    animation: animationAccueilVide 3s ease-in 0s 1 normal none;
+  }
 
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    a {
-        color: white;
-        text-decoration: unset;
-    }
-
-    header {
-        background-color: rgba(234, 234, 234, 0.606);
-        height: 220px;
-        margin-top: 0;
-        padding-bottom: 4%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    header h1 {
-        background-color: white;
-        width: 100%;
-        box-sizing: border-box;
-        font-size: 18px;
-        margin: 0 auto 0.6%;
-        padding-top: 1.8%;
-        height: 18%;
-        box-shadow: 0px 3px grey;
-    }
-   
-   header .localisation {
-       margin-top: 0;
-       font-size: 12px;
-       width: 100%;
-       height: 12%;
-       background-color: rgba(234, 234, 234, 0.763);
-       display: flex;
-       justify-content: center;
-       align-items: center;
-   }
-   header .localisation i {
-       margin-right: 3%;
-   }
-    
-   header .headerText {
-       display: flex;
-       flex-direction: column;
-       justify-content: flex-start;
-       align-items: center;
-       width: 90%;
-       height: 70%;
-   }
-   header .headerText h2 {
-       font-size: 16px;
-       width: 50%;
-       margin-bottom: 0;
-   }
-   header .headerText p {
-       font-size: 14px;
-       width: 65%;
-       margin-top: 1.5%;
-   }
-   header .headerText button {
-       background: linear-gradient( #FF79DA, #9356DC);
-       color: white;
-       border: 0;
-       font-size: 13px;
-       margin-top: 1.5%;
-       width: fit-content;
-       height: 20%;
-       border-radius: 20px;
-   }
-
-   .tutoriel {
-       display: flex;
-       flex-direction: column;
-       height: 230px;
-   }
-   .tutoriel h2 {
-       margin-left: 7%;
-       font-size: 16px;
-       height: 5%;
-   }
-   
-   .tutorielFlex {
-       display: flex;
-       flex-direction: column;
-       justify-content: space-evenly;
-       align-items: center;
-       height: 95%;
-   }
-
-   .tutorielFlex div {
-       display: flex;
-       align-items: center;
-       margin-left: 3%;
-       width: 90%;
-       height: 27%;
-       background-color: rgb(242, 241, 241);
-       border-radius: 20px;
-       box-shadow: 1px 1px 3px grey;
-   }
-   .tutorielFlex div:hover {
-       background-color: hsla(300, 100%, 50%, 0.15);
-       box-shadow: 3px 4px 3px grey;
-   }    
-   .tutorielFlex div .cercles {
-       position: relative;
-       right: 5%;/* Doit être la largeur en % du cercle divisé par deux*/
-       /*width: 15px;
-       height: 15px;*/
-       margin-right: 3%;
-       width: 6%;
-       padding: 0.5%;
-       aspect-ratio: 1/1;
-       color: white;
-       background-color: purple;
-       border-radius: 50%;
-   }
-
-   .tutorielFlex div .cercles p {
-       font-size: 12px;
-       margin-left: auto;
-       margin-right: auto;
-   }
-
-   .tutorielFlex div i {
-    margin-right: 5%;
-    }
-
-   .tutorielFlex .doubleIcones  {
-        width: fit-content;
-        margin-right: 4%;
-    }
-
-   .tutorielFlex .doubleIcones i {
-        font-size: 10px;
-        margin-right: 2px;
-    }
-
-    .selection {
-        background-color: rgb(237, 236, 236);
-        height: 540px;
-        margin-top: 10%;
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 35%;
-    }
-    .selection h2 {
-        font-size: 16px;
-        padding-top: 4%;
-        height: 2%;
-        margin-left: 4%;
-    }
-    .selection .restaurantsFlex {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 95%;
-    }
-
-    .restaurantsFlex .resto {
-        border-radius: 10px;
-        background-color: white;
-        margin-bottom: 3.5%;     
-        height: 25%;
-        width: 90%;
-        box-shadow: 1px 1px 3px grey;
-    }
-
-    .restaurantsFlex .resto a { /* Background ne fonctionne pas sur les liens*/
+  /*Ajout*/
+  
+    .loader {
+        border: 1px solid red;
+        position: fixed;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .restaurantsFlex .resto a img { 
-        margin: 0;
         width: 100%;
-        height: 72%;
-        border-radius: 10px 10px 0 0;
-    }
-
-    .restaurantsFlex div .background {
-        background-image: url('./img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 0 -40px;
-        width: 100%;
-        height: 72%;
-        border-radius: 10px 10px 0 0;
-    }
-    .restaurantsFlex div .bgOne {
-        background-image: url('./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
-        background-position: 0 -0px;
-    }
-    .restaurantsFlex div .bgTwo {
-        background-image: url('./img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
-        background-position: -0px -120px;
-    }
-    .restaurantsFlex div .bgThree {
-        background-image: url('./img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
-        background-position: -0px -28px;
-    }
-
-    .restaurantsFlex .description {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        height: 28%;  
-    }
-
-    .restaurantsFlex div p {
-        color: black; /* La première case n'avait plus de texte sans*/
-        font-size: 11px;
-        font-weight: 600;
-        height: fit-content;
-        margin: 0;
-        margin-left: 3%;
-    }
-
-    .resto .nom {
-        margin-bottom: 0.5%;
-    }
-    .resto .localisation {
-        margin-top: 0.5%;
-    }
-
-    .restaurantsFlex .contI {
-        display: flex;
-        margin: auto;
-        margin-right: 8%;
-        height: 97%;
-        background-color: white; /* 2 dernières prop = bug */
-        border: 0px;
-    }
-
-    .restaurantsFlex .contI i {
-        margin-top: 70%;
-        color: blue;
-    }
-    .restaurantsFlex .contI i:active {
-        margin-top: 70%;
-        animation: heartAnim 1s linear 0s 1 normal forwards;
-        /* ! Se fait facilement et mieux en JS !*/
-    }
-
-    @keyframes heartAnim {
+        animation: loaderback 2s;
+        animation-delay: 1.75s;
+        animation-fill-mode: forwards;
+        background-color: white;
+        z-index: 1000;
+      }
+      
+      @keyframes loaderback {
+        100% {
+          opacity: 0;
+          display: none;
+          z-index: -1000;
+        }
+      }
+      .loaderitems {
+        border-radius: 50%;
+        width: 50%;
+        aspect-ratio: 1/1;
+        animation: spin 6s linear;
+        margin-top: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        animation-fill-mode: forwards;
+        z-index: 1005;
+      }
+      
+      @keyframes spin {
         0% {
-            color: blue;
+          border: 16px solid pink;
+          background-color: purple;
+        }
+        25% {
+          border: 16px solid purple;
+          background-color: pink;
         }
         50% {
-            color: rgb(87, 17, 17);
+            border: rebeccapurple;
+            background-color: salmon;
+        }
+        75% {
+            border: pink;
+            background-color: salmon;
         }
         100% {
-            color: purple;
+            display: none;
+            z-index: -10000;
         }
-    }
+      }
 
-    footer {
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        height: 120px;
-        color: white;
-        background-color: rgb(44, 44, 44);
+  /*Ajout*/
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  a {
+    color: white;
+    text-decoration: unset;
+  }
+
+  header {
+    background-color: white;
+    height: 250px;
+    margin-top: 0;
+    margin-bottom: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  header .logo {
+    width: 100%;
+    font-size: 18px;
+    height: 13%;
+    padding-top: 5%;
+    padding-bottom: 0%;
+    box-shadow: 0px 3px grey;
+  }
+  header .logo img {
+    width: 40%;
+    height: 60%;
+  }
+
+  header .localisation {
+    margin-top: 0;
+    font-size: 12px;
+    width: 100%;
+    height: 16%;
+    background-color: rgba(234, 234, 234, 0.763);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .localisation i {
+    margin-right: 3%;
+  }
+
+  header .headerText {
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 8%;
+    padding-bottom: 12%;
+    width: 100%;
+    height: 70%;
+  }
+  header .headerText h1 {
+    font-size: 16px;
+    line-height: 100%;
+    width: 50%;
+    margin: 0;
+    margin-bottom: 3%;
+  }
+
+  header .headerText p {
+    line-height: 100%;
+    font-size: 14px;
+    width: 85%;
+    margin: 0;
+    margin-bottom: 5%;
+  }
+  header .headerText button {
+    background: linear-gradient(#ff79da, #9356dc);
+    color: white;
+    border: 0;
+    font-size: 13px;
+    margin: 0;
+    padding: 8px 6% 10px;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+
+  .tutoriel {
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+  }
+  .tutoriel h2 {
+    margin-left: 7%;
+    font-size: 16px;
+    height: 5%;
+  }
+
+  .tutorielFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 95%;
+  }
+
+  .tutorielFlex div {
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+    width: 90%;
+    height: 27%;
+    background-color: rgb(242, 241, 241);
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px grey;
+  }
+  .tutorielFlex div:hover {
+    background-color: hsla(300, 100%, 50%, 0.15);
+    box-shadow: 3px 4px 3px grey;
+  }
+  .tutorielFlex div .cercles {
+    position: relative;
+    right: 6%; /* Doit être la largeur en % du cercle divisé par deux*/
+    /*width: 15px;
+       height: 15px;*/
+    margin-right: 3%;
+    width: 4%;
+    padding: 1%;
+    aspect-ratio: 1/1;
+    color: white;
+    background-color: purple;
+    border-radius: 50%;
+  }
+
+  .tutorielFlex div .cercles p {
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tutorielFlex div i {
+    margin-right: 5%;
+  }
+
+  .tutorielFlex .doubleIcones {
+    width: fit-content;
+    margin-right: 5%;
+    margin-left: 0;
+  }
+
+  .tutorielFlex .doubleIcones i {
+    font-size: 10px;
+    margin-right: 2px;
+  }
+
+  .selection {
+    background-color: rgb(237, 236, 236);
+    height: 600px;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30%;
+  }
+  .selection h2 {
+    font-size: 16px;
+    padding-top: 4%;
+    height: 2%;
+    margin-left: 4%;
+    margin-bottom: 6%;
+  }
+  .selection .restaurantsFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95%;
+  }
+
+  .restaurantsFlex .resto {
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 3.5%;
+    height: 25%;
+    width: 90%;
+    box-shadow: 1px 1px 3px grey;
+  }
+
+  .restaurantsFlex .resto a {
+    /* Background ne fonctionne pas sur les liens*/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .restaurantsFlex .resto a img {
+    object-fit: cover;
+    margin: 0;
+    width: 100%;
+    height: 72%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .restaurantsFlex div .background {
+    background-image: url("./img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -40px;
+    width: 100%;
+    height: 72%;
+    border-radius: 10px 10px 0 0;
+  }
+  .restaurantsFlex div .bgOne {
+    background-image: url("./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-position: 0 -0px;
+  }
+  .restaurantsFlex div .bgTwo {
+    background-image: url("./img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    background-position: -0px -120px;
+  }
+  .restaurantsFlex div .bgThree {
+    background-image: url("./img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-position: -0px -28px;
+  }
+
+  .restaurantsFlex .description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 34%;
+  }
+
+  .restaurantsFlex div p {
+    color: black; /* La première case n'avait plus de texte sans*/
+    font-size: 11px;
+    font-weight: 600;
+    height: fit-content;
+    margin: 0;
+    margin-left: 3%;
+  }
+
+  .resto .nom {
+    margin-bottom: 0.8%;
+  }
+  .resto .localisation {
+    margin-top: 0.8%;
+  }
+
+  .restaurantsFlex .contI {
+    display: flex;
+    margin: auto;
+    margin-right: 8%;
+    height: 97%;
+    background-color: white; /* 2 dernières prop = bug */
+    border: 0px;
+  }
+
+  .restaurantsFlex .contI i {
+    margin-top: 70%;
+    font-size: 16px;
+    color: blue;
+  }
+  .restaurantsFlex .contI i:active {
+    margin-top: 70%;
+    animation: heartAnim 1s linear 0s 1 normal forwards;
+    /* ! Se fait facilement et mieux en JS !*/
+  }
+
+  @keyframes heartAnim {
+    0% {
+      color: blue;
     }
-    footer h2, footer li {
+    50% {
+      color: rgb(87, 17, 17);
+    }
+    100% {
+      color: purple;
+    }
+  }
+
+  footer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    color: white;
+    background-color: rgb(44, 44, 44);
+  }
+  footer h2,
+  footer li {
+    margin: 0;
+    font-size: 12px;
+    margin-left: 6%;
+  }
+  footer h2 {
+    margin-top: 5%;
+    height: 10%;
+  }
+
+  footer ul {
+    margin-top: 4%;
+    padding: 0;
+    height: 90%;
+  }
+
+  footer li {
+    font-size: 10px;
+    margin-top: 3px;
+  }
+
+@media (min-width: 770px) and (max-width: 991px)  {
+    
+body {
+    margin: 0;
+    padding: 0;
+ }
+    
+ul {
+    list-style: none;
+    padding: 0;
+ }
+    
+a {
+    color: white;
+    text-decoration: unset;
+ }
+    
+header {
+    height: fit-content;
+    margin-bottom: 3%;
+ }
+    
+header .localisation {
+    height: 50px;
+    font-size: 16px;
+ }
+
+header .localisation i {
+    margin-right: 2%;
+    font-size: 22px;
+ }
+    
+header .headerText {
+    padding-top: 0;
+    justify-content: space-evenly;
+    height: 150px;
+    padding-bottom: 0;
+ }
+
+header .headerText h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+ }
+
+header .headerText p {
+    margin: 0;
+    font-size: 17px;
+ }
+
+header .headerText button {
+    font-size: 16px;
+ }
+    
+.tutoriel {
+    height: 230px;
+ }
+
+.tutoriel h2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7%;
+    font-size: 20px;
+ }
+
+.tutorielFlex {
+    flex-direction: row;
+ }
+    
+.tutorielFlex div {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0%;
+    width: 30%;
+    height: 100%;
+ }
+
+.tutorielFlex div .cercles {
+    box-sizing: border-box;
+    bottom: 9.5%;
+    right: 0;
+    width: 15%;
+    margin: 0;
+    margin-bottom: 8%;
+    height: auto;
+    padding-top: 3%;
+ }
+    
+.tutorielFlex div .cercles p {
+    font-size: 18px;
+ }
+    
+.tutorielFlex div p {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+ }
+
+.tutorielFlex div i {
+    margin: 0;
+    font-size: 35px;
+    margin-bottom: 10%;
+ }
+    
+.selection {
+    height: fit-content;
+    margin-top: 8%;
+    padding-bottom: 0%;
+ }
+
+ .selection h2 {
+    font-size: 22px;
+    padding-top: 1%;
+    height: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+ }
+
+.selection .restaurantsFlex {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ }
+    
+.restaurantsFlex .resto {
+    width: 29%;
+    height: auto;
+    aspect-ratio: 1/1;
+ }
+    
+.restaurantsFlex .resto a img {
+    height: 85%;
+ }
+    
+.restaurantsFlex div p {
+    font-size: 16px;
+ }
+
+.restaurantsFlex .contI i {
+    font-size: 22px;
+ }
+
+footer { 
+    height: fit-content;
+    padding-bottom: 4%;
+    color: white;
+ }
+        
+footer h2 {
+    margin: 2% auto 0;
+    font-size: 26px;
+ }
+        
+footer ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+ }
+        
+footer li {
+    height: fit-content;
+    padding: 2%;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 16px;
+    margin: 0;
+ }
+    
+footer li a {
+    color: black;
+ }
+ 
+}
+
+@media  (min-width: 991px) {
+    
+    header {
+        height: fit-content;
+        margin-bottom: 1%;
+     }
+        
+    header .localisation {
+        height: 50px;
+        font-size: 16px;
+     }
+    
+    header .localisation i {
+        margin-right: 2%;
+        font-size: 22px;
+     }
+        
+    header .headerText {
+        padding-top: 0;
+        justify-content: space-evenly;
+        height: 150px;
+        padding-bottom: 0;
+     }
+    
+    header .headerText h1 {
         margin: 0;
-        font-size: 12px;
-        margin-left: 6%;
-    }
-    footer h2 {
-        margin-top: 4%;
-        height: 10%;
-    }
-
-    footer ul {
-        margin-top: 3%;
         padding: 0;
-        height: 90%;
-    }
-
+        font-size: 20px;
+     }
+    
+    header .headerText p {
+        margin: 0;
+        font-size: 17px;
+     }
+    
+    header .headerText button {
+        font-size: 16px;
+     }
+        
+    .tutoriel {
+        height: 230px;
+     }
+    
+    .tutoriel h2 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4%;
+        font-size: 20px;
+     }
+    
+    .tutorielFlex {
+        flex-direction: row;
+     }
+        
+    .tutorielFlex div {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0%;
+        width: 30%;
+        height: 100%;
+        padding-bottom: 0.5%;
+     }
+    
+    .tutorielFlex div .cercles {
+        box-sizing: border-box;
+        bottom: 15%;
+        right: 0;
+        width: 15%;
+        margin: 0;
+        margin-bottom: 3%;
+        height: auto;
+        padding-top: 4.5%;
+     }
+        
+    .tutorielFlex div .cercles p {
+        font-size: 24px;
+     }
+        
+    .tutorielFlex div p {
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+     }
+    
+    .tutorielFlex div i {
+        margin: 0;
+        font-size: 35px;
+        margin-bottom: 7%;
+     }
+        
+    .selection {
+        height: fit-content;
+        margin-top: 8%;
+        padding-bottom: 0%;
+     }
+    
+     .selection h2 {
+        font-size: 22px;
+        padding-top: 1%;
+        height: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3%;
+     }
+    
+    .selection .restaurantsFlex {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+     }
+        
+    .restaurantsFlex .resto {
+        width: 29%;
+        height: auto;
+        aspect-ratio: 1/1;
+     }
+    .restaurantsFlex .resto .description{
+        height: auto;
+     }
+        
+    .restaurantsFlex .resto a img {
+        height: 85%;
+     }
+        
+    .restaurantsFlex div p {
+        font-size: 16px;
+     }
+    
+    .restaurantsFlex .contI i {
+        font-size: 22px;
+     }
+    
+    footer { 
+        height: fit-content;
+        padding-bottom: 3%;
+        color: white;
+     }
+            
+    footer h2 {
+        margin: 2% auto 0;
+        font-size: 28px;
+     }
+            
+    footer ul {
+        display: flex;
+        margin-top: 3%;
+        justify-content: space-evenly;
+     }
+            
     footer li {
-        font-size: 10px;
-        margin-top: 3px;
-    }
-   
+        height: fit-content;
+        padding: 2%;
+        background-color: white;
+        border-radius: 15px;
+        font-size: 16px;
+        margin: 0;
+     }
+        
+    footer li a {
+        color: black;
+     }
 
 }
